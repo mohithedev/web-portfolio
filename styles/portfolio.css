@@ -1,3 +1,4 @@
+/* Variable */
 :root{
     --white: #fff ;
     --black: #181818;
@@ -5,11 +6,16 @@
     --dark-gray: #757575;
     --orange: #FD6E0A;
     --dev-color: rgba(24, 24, 24, 0.15);
+    --pink-bg: #FFF8F3;
+    --white-bg: #fff;
 }
 /* reset */
 *,
 *::after,
 *::before{
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
     list-style: none;
 }
 /* Common Shared Style */
@@ -21,6 +27,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 200px;
 }
 nav .nav-title{
     color: #333;
@@ -43,10 +50,35 @@ nav ul li a{
 }
 .primary_btn{
     padding: 15px 35px;
-    border: 5px;
     background: var(--orange);
     color: var(--white);
     font-size: 20px;
     font-weight: 700;
     border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+/* Header area style */
+.header{
+    background: var(--pink-bg);
+}
+.banner{
+    padding: 30px 30px 30px 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.secnd_btn{
+    padding: 15px 35px;
+    border: 1px solid var(--orange);
+    background: var(--white);
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.banner img{
+    width: 500px;
+    height: 600px;
 }
