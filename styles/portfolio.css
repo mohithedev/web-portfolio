@@ -8,25 +8,27 @@
     --dev-color: rgba(24, 24, 24, 0.15);
     --pink-bg: #FFF8F3;
     --white-bg: #fff;
+    --ideal-size: 35px;
 }
 /* reset */
 *,
 *::after,
 *::before{
-    /* margin: 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; */
+    box-sizing: border-box;
     list-style: none;
 }
 /* Common Shared Style */
 body{
     font-family: 'Open Sans', sans-serif;
 }
-/* Nav Related Style */
+/* Nav style start */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
     margin: 0 200px;
 }
 nav .nav-title{
@@ -58,15 +60,23 @@ nav ul li a{
     cursor: pointer;
     border: none;
 }
-/* Header area style */
+/* Nav style end */
+
+/* Header area style start */
 .header{
     background: var(--pink-bg);
+    background-image: url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 .banner{
-    padding: 30px 30px 30px 150px;
+    padding: 30px 30px 0 150px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+.banner_content{
+    width: 580px;
 }
 .secnd_btn{
     padding: 15px 35px;
@@ -78,7 +88,63 @@ nav ul li a{
     border-radius: 5px;
     cursor: pointer;
 } 
-.banner img{
+.banner .profile_pic{
     width: 500px;
-    height: 600px;
 }
+.banner_greeting{
+    font-size: 45px;
+    color: var(--dark);
+}
+.banner_title{
+    font-size: 85px;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20x;
+}
+.banner_description{
+    color: var(--dark-gray);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+/* Header area style end here */
+
+/* Main section style start */
+main{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+/* About section style start */
+.about{
+    margin: 100px;
+    padding: 100px;
+    text-align: center;
+    background: var(--pink-bg);
+}
+.section_title{
+    font-size: var(--ideal-size);
+    font-weight: 700;
+}
+.section_description{
+    margin: 30px 0;
+    font-size: 18px;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.about_info_container{
+    display: flex;
+    justify-content: space-around;
+}
+.info_title{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+.info_description{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+}
+/* About section style end*/
