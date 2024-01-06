@@ -224,3 +224,15 @@ main section{
 .download_cv{
     text-align: center;
 }
+/* Resume style end */
+/* Footer style start */
+footer{
+    padding: 130px 200px;
+    background: var(--pink-bg);
+    display: flex;
+    justify-content: space-around;
+}
+.footer_column{
+
+}
+/* Footer style end */
