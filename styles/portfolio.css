@@ -173,10 +173,11 @@ main section{
 .skills_title{
     margin: 12px 0px;
 }
-.skills_description{
+.common_description{
     font-size: 16px;
     line-height: 28px;
     color: var(--dark-gray);
+    font-weight: 400;
 }
 /* Resume style start */
 .resume{
@@ -214,11 +215,7 @@ main section{
     color: var(--dark);
     margin-bottom: 20px;
 }
-.resume_item_description{
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--dark-gray);
-    line-height: 28px;
+.resume_item .common_description{
     margin-bottom: 20px;
 }
 .download_cv{
@@ -231,8 +228,35 @@ footer{
     background: var(--pink-bg);
     display: flex;
     justify-content: space-around;
+    gap: 110px;
 }
 .footer_column{
-
+    width: 50%;
+}
+.social_link a{
+    margin-right: 22px;
+}
+.footer_column .section_title{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footer_column .common_description{
+    margin-bottom: 20px;
+}
+/* Contact form */
+.contact_form 
+input[type="text"],
+input[type="email"],
+textarea{
+    display: block;
+    background: var(--white);
+    color: var(--dark);
+    margin-bottom: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 /* Footer style end */
